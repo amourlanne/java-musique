@@ -1,6 +1,6 @@
 # Musique
 
-Musique is a Java application for listen to music.
+Musique is a Java application for listening to music.
 
 ## Installation
 
