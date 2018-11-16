@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="vBox" prefHeight="305.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.core.AlbumShowController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="277.0" prefWidth="500.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="tablePistesFXML" layoutX="14.0" layoutY="81.0" onMouseClicked="#onMouseClickedRow" prefHeight="210.0" prefWidth="567.0">
+              <columns>
+                <TableColumn fx:id="columPisteFXML" prefWidth="446.4000244140625" text="Piste" />
+                  <TableColumn fx:id="columDateFXML" prefWidth="107.20001220703125" text="Durée" />
+              </columns>
+            </TableView>
+            <Button layoutX="474.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedHome" prefHeight="26.0" prefWidth="106.0" text="Menu" />
+            <Button layoutX="358.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedReturn" prefHeight="26.0" prefWidth="106.0" text="Retour" />
+            <Text layoutX="14.0" layoutY="25.0" text="Titre :" />
+            <Text layoutX="14.0" layoutY="45.0" text="Durée totale :" />
+            <Text layoutX="14.0" layoutY="66.0" text="Artiste :" />
+            <Text fx:id="titreFXML" layoutX="50.0" layoutY="25.0" text="value" />
+            <Text fx:id="dureeFXML" layoutX="92.0" layoutY="45.0" text="value" />
+            <Text fx:id="artisteFXML" layoutX="62.0" layoutY="66.0" text="value" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
